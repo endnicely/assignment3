@@ -42,6 +42,18 @@ sum(num_colllection){
     
 }*/
 
+/*//The Fortune Teller
+function tellFortune(childenNum, partnerName, geolocation, jobTitle) {
+    'use strict';
+    window.document.write("You will be a " +  jobTitle + " in " + geolocation + ", and married to " + partnerName + " with " + childenNum + " kids.<br><br>");
+    
+}
+
+tellFortune(3, "Bill Gates", "Seattle", "philanthropist");
+tellFortune(0, "no one", "India", "monk");
+tellFortune(2, "Zak", "San Diego", "web developer");*/
+
+/*
 // The Rock, Paper, Scissors Game
 var userChoice = window.prompt("what is your choice 'rock, paper, scissors'?");
 var computerChoice = Math.random() * 10;
@@ -54,49 +66,52 @@ if (computerChoice < lowerBound) {
     computerChoice = "paper";
 }
 
-function whoWin(userChoice, computerChoice){
+function whoWin(userChoice, computerChoice) {
+    'use strict';
    
-    if(userChoice === computerChoice) {
-        window.alert("You are in a tie!");  
-    }
-    else{
-        if (userChoice = "rock"){
-            switch (computerChoice){
-                case "paper":
-                    window.alert("Paper covers rock! You lose!");
-                    break;
-                case "scissors":
-                    window.alert("Rock destroys scissors! You win!");
-                    break;
+    if (userChoice === computerChoice) {
+        window.alert("You are in a tie!");
+    } else {
+        if (userChoice === "rock") {
+            switch (computerChoice) {
+            case "paper":
+                window.alert("Paper covers rock! You lose!");
+                break;
+            case "scissors":
+                window.alert("Rock destroys scissors! You win!");
+                break;
             }
             
-            } else if (userChoice = "paper") {
-                 switch (computerChoice){
-                    case "rock":
-                        window.alert("Paper covers rock! You win!");
-                        break;
-                    case "scissors":
-                        window.alert("Scissors cut paper! You lose!");
-                        break;
-                 }
-
-            }else if {userChoice = "scissors") {
-                switch (computerChoice){
-                    case "rock":
-                        window.alert("Rock destroys scissors! You lose!");
-                        break;
-                    case "paper":
-                        window.alert("Scissors cut paper! You win!");
-                        break;
-                 }
-
+        } else if (userChoice === "paper") {
+            switch (computerChoice) {
+            case "rock":
+                window.alert("Paper covers rock! You win!");
+                break;
+            case "scissors":
+                window.alert("Scissors cut paper! You lose!");
+                break;
             }
-            
+        } else if (userChoice === "scissors") {
+            switch (computerChoice) {
+            case "rock":
+                window.alert("Paper covers rock! You win!");
+                break;
+            case "scissors":
+                window.alert("Scissors cut paper! You lose!");
+                break;
+            }
+
+        } else {
+            window.alert("Your choice is not one of 'rock, paper, scissors'. Click the Refresh button to start again!");
+
         }
+        
     }
     
 }
 
+whoWin(userChoice, computerChoice);
+*/
 
 
 //The Basic Calculator
